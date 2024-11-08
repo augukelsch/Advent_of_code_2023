@@ -34,7 +34,8 @@ for (let i = 0; i < 1; i++) {//input.length
             }
             try{
             for (let m = 0; m < symbols.length; m++) {
-                    if (input[i-1][j-1] == symbols[m] || input[i-1][j] == symbols[m]|| input[i-1][j+1] == symbols[m]) {
+                console.log("Value input: "+input[i][j-1])
+                    if (input[i-1][j-3] == symbols[m] || input[i-1][j-2] == symbols[m]|| input[i-1][j-1] == symbols[m]) {
                         return status = true;
                     }
                     if (input[i][j-1] == symbols[m] || input[i][j] == symbols[m]|| input[i][j+1] == symbols[m]) {
