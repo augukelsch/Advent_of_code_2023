@@ -4,7 +4,7 @@ const out = fs.readFileSync("4-input.txt").toString().split("\r\n")
 
 var output = [];
 
-for(let i = 0 ; i < out.length; i++){
+for(let i = 0 ; i < out.length; i++){ //
     const winners = out[i].slice(10,39).replaceAll("  "," ").split(" ");
     const list = out[i].slice(42,117).replaceAll("  "," ").split(" ");
 
